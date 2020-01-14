@@ -1,0 +1,5 @@
+node_modules/**
+**/.directory
+/.idea/
+midiharpe.iml
+editor/node_modules/**

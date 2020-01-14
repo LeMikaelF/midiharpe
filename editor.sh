@@ -1,0 +1,2 @@
+node ./dispatcher.js --editor
+

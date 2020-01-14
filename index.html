@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Transpositeur MIDIharpe</title>
+  <script src="index.js"></script>
+  <style>
+    #hud {
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 70px;
+      position: fixed;
+      background-color: grey;
+      z-index: 1;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .main {
+      margin-top: 70px;
+    }
+
+    .btn:focus {
+      opacity: 0.5;
+      transition: opacity 2s linear;
+    }
+
+    #currentscale {
+      font-weight: bold;
+      font-size: 40px;
+    }
+
+    #hud> .wrapper > div {
+      padding: 10px;
+      background-color: pink;
+      vertical-align: middle;
+      display: inline-flex;
+    }
+
+    #hud> .wrapper > div> * {
+      padding: 5px;
+    }
+
+    .title-div {
+      text-align: center;
+      font-weight: bold;
+    }
+
+    ol div {
+      vertical-align: middle;
+      display: inline-block;
+    }
+
+    ol {
+      list-style-type: decimal;
+    }
+
+    .hiddenDialog {
+      transition: height 1s ease-out;
+      height: 0;
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <input id="previousClicker" style="display:none;">
+  <input id="nextClicker" style="display:none;">
+  <div id="hud">
+    <div id="title-div">
+      Chargez un fichier
+    </div>
+    <div class="wrapper">
+      <button id="previous" class="btn" value="false">Précédent</button>
+      <div id="currentscale">0</div>
+      <button id="next" class="btn" value="true">Suivant</button>
+    </div>
+  </div>
+  <div class="main">
+    <div id="mididialog" class="hiddenDialog"></div>
+    <ol id="scales"></ol>
+    <input id="fileloader" style="display:none;" type="file">
+  </div>
+</body>
+
+</html>

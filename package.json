@@ -1,0 +1,20 @@
+{
+  "name": "midiharpe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "chromium-args": "--mixed-context",
+  "scripts": {
+    "editor": "nw editor.js",
+    "start": "nw ."
+  },
+  "author": "Mikael Francoeur",
+  "license": "ISC",
+  "dependencies": {
+    "abcjs": "^3.2.1",
+    "easymidi": "0.0.4",
+    "node-command-line": "^1.0.2",
+    "scroll-js": "^1.8.8",
+    "sortablejs": "^1.7.0"
+  }
+}
