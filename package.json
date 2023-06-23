@@ -11,7 +11,7 @@
   "author": "Mikael Francoeur",
   "license": "ISC",
   "dependencies": {
-    "abcjs": "^3.2.1",
+    "abcjs": "^3.3.4",
     "easymidi": "0.0.4",
     "node-command-line": "^1.0.2",
     "scroll-js": "^1.8.8",
